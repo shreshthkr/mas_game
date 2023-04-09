@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {randomNum, options, getCorrectAnswer, shuffle} from "../api"
 import { Question, Answer } from '../constants';
+import "./GamePage.css"
 
 
 
@@ -57,7 +58,7 @@ const handleReset = () => {
   return (
     <>
     <div className='w-full h-full bg-white full'>
-      <h1 className='text-blue-500 text-center my-10'>Dmas Game</h1>
+      <h1 className='animate-words'>Dmas Game</h1>
       <h2 className="text-black">Level {level}</h2>
       <div className="w-200 flex flex-col justify-evenly">
       <div>
