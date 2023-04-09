@@ -3,7 +3,7 @@ import {randomNum, options, getCorrectAnswer, shuffle} from "../api"
 import { Question, Answer } from '../constants';
 import "./GamePage.css"
 
-
+import { useNavigate } from 'react-router-dom';
 
 const GamePage = () => {
     const [level, setLevel] = useState<number>(1);
@@ -11,7 +11,7 @@ const GamePage = () => {
     const [question, setQuestion] = useState<Question>(randomNum(level));
     const [timer, setTimer] = useState<number>(10)
 
-    
+    const navigate=useNavigate()
 
     const [answers, setAnswers] = useState<Answer[]>(options(getCorrectAnswer(question)));
   
@@ -58,6 +58,7 @@ const handleReset = () => {
   return (
     <>
     <div className='w-full h-full bg-white full'>
+      <div className=' p-3 rounded-lg'><button onClick={()=>navigate('/')} style={{display:"flex",alignItems:"flex-start" ,margin:"35px 30px",marginTop:"25px",backgroundColor:"blue",borderRadius:"5px",padding:"5px"}}>Home</button> </div>
       <h1 className='animate-words'>Dmas Game</h1>
       <h2 className="text-black">Level {level}</h2>
       <div className="w-200 flex flex-col justify-evenly">
