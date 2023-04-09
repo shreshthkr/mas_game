@@ -86,8 +86,8 @@ const handleReset = () => {
           ))}
         </div>
       </div>
-      <div className="text-white bg-blue-500 rounded-md p-2 mt-20 mx-auto w-300">Score: {score}</div>
-      <div className="text-white bg-blue-500 rounded-md p-2 mt-20 mx-auto w-300">{`Time left: ${timer}s`}</div>
+      <div className="text-white bg-blue-500 rounded-md p-2 mt-5 mx-auto w-300">Score: {score}</div>
+      <div className="text-white bg-blue-500 rounded-md p-2 mt-5 mx-auto w-300">{`Time left: ${timer}s`}</div>
       <div className="text-white bg-blue-500 rounded-md px-5 py-3 mt-5 mx-auto w-300 cursor-pointer" onClick={handleReset }>Reset</div>
     </div>
     </div>
