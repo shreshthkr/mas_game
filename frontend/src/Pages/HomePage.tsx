@@ -1,15 +1,18 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import "./homePage.css"
+
+
 const HomePage = () => {
     const navigate = useNavigate();
 
 const handleClick = () => {
     navigate ("/game")
 }
-
+//container relative mx-auto h-90vh w-80vw border border-gray.400 flex justify-center items-center
   return (
     <div className="w-400 min-h-320 container mx-auto px-4 text-white mt-20">
-      <div className='container relative mx-auto h-90vh w-80vw"'>
+      <div className='container'>
         <div className="flex flex-wrap justify-center">
           <div className="flex items-center justify-center w-28 h-28 rounded-full animate-scale-up-bounce hover:transform hover:scale-125 transition duration-500 ease-in-out m-4">
             <div className="flex flex-col items-center justify-evenly">

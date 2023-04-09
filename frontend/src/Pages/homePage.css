@@ -1,0 +1,6 @@
+.container>div{
+    width: 100%;
+    display: flex;
+   margin-top: 120px;
+   margin-bottom: 30px;
+}
