@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react'
+import "./App.css"
 
-import './App.css';
 
-function App() {
+
+const App = () => {
+
+
   return (
-    <div className="App">
-     <h1 className="text-blue-500 text-4xl font-bold">
-       Dmas Game
-    </h1>
+    <div className='App'>
+       <h1 className='text-blue-500 text-4xl font-bold'>Dmas game</h1>
+       
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
