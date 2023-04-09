@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scale-up {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .animate-scale-up {
+    animation-name: scale-up;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  .animate-scale-up-bounce {
+    animation: scale-up-bounce 5s ease-in-out ;
+  }
+  
+  @keyframes scale-up-bounce {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-import "./App.css"
+import './App.css';
+import AllRoutes from './Components/AllRoutes';
 
-
-
-const App = () => {
-
-
+function App() {
   return (
-    <div className='App'>
-       <h1 className='text-blue-500 text-4xl font-bold'>Dmas game</h1>
-       
+    <div className="App">
+      <div className='w-full h-screen bg-primary-blue text-white border border-black'>
+       <AllRoutes />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -36,7 +36,7 @@ const shuffle = (array: any[]) => {
   return array;
 };
 
-const Game5: React.FC = () => {
+const GamePage: React.FC = () => {
   const [level, setLevel] = useState<number>(1);
   const [score, setScore] = useState<number>(0);
   const [question, setQuestion] = useState<Question>(generateQuestion(level));
@@ -98,4 +98,4 @@ const Game5: React.FC = () => {
   );
 };
 
-export default Game5;
+export default GamePage;
