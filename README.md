@@ -1,4 +1,7 @@
 # mas_game
+ It is a Mathematical Operation Game, the name Dmas is derived from BODMAS, It is designed to help students learn and practice mathematics while playing
+
+# Deploed Link: https://dmas-game.vercel.app/
 
 # Team Members: 
   Shreshth Kumar | 
